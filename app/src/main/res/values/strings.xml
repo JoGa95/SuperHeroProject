@@ -1,0 +1,14 @@
+<resources>
+    <string name="msj_error">Ocurrió un error, favor de intentar de nuevo</string>
+    <string name="title_detail">Detalle Super Heroe</string>
+    <string name="title_buscar">Buscar Super Heroe</string>
+    <string name="title_home">Favor de seleccionar a tu superheroe favorito</string>
+    <string name="title_Alterego">Alter egos:</string>
+    <string name="title_NombreCompleto">Nombre Completo:</string>
+    <string name="title_PrimeraAp">Primera Aparición:</string>
+    <string name="title_PublicadoPor">Publicado Por:</string>
+    <string name="title_TrabajaEn">Trabaja En:</string>
+    <string name="title_TrabajoUbicacion">Ubicación:</string>
+    <string name="title_sincoincidencias">No se encontraron coincidencias, pero recuerda cualquiera puede ser un HÉROE</string>
+    <string name="msj_requerido">El campo {campo} es requerido.</string>
+</resources>

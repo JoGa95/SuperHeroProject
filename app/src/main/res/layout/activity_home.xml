@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundHome"
+        android:gravity="center_horizontal"
+        >
+        <SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:background="@android:color/white"
+            android:layout_margin="@dimen/tam_Margin"
+            android:queryHint="@string/title_buscar" />
+        <TextView
+            android:id="@+id/txtDialogSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/simpleSearchView"
+            android:fontFamily="@font/circularstd_medium"
+            android:text="@string/title_home"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tam_textTitulo" />
+        <ImageView
+            android:id="@+id/imgNoHero"
+            android:layout_below="@id/txtDialogSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:src="@drawable/img3"
+            />
+        <TextView
+            android:id="@+id/txtHeroes"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/imgNoHero"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/circularstd_black"
+            android:textSize="@dimen/tam_sinCoincidencias"
+            android:visibility="gone"
+            android:text="@string/title_sincoincidencias"
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_below="@id/txtDialogSelect"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/tam_Margin"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHeroes"
+                android:backgroundTint="@color/whiteTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tam_Margin"
+                android:background="@android:color/white"
+                android:layout_below="@id/txtDialogSelect"
+                android:clipToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:overScrollMode="never" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tam_Margin">8dp</dimen>
+    <dimen name="tam_textTitulo">16sp</dimen>
+    <dimen name="tamZero">0dp</dimen>
+    <dimen name="tam_MarginDouble">16dp</dimen>
+    <dimen name="tam_textSub">18sp</dimen>
+    <dimen name="tam_textDet">16sp</dimen>
+    <dimen name="tam_sinCoincidencias">32sp</dimen>
+</resources>
